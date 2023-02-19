@@ -1,0 +1,270 @@
+.first .text{
+    padding-bottom: 20px;
+}
+.first .text p{
+    font-size:large ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding-left: 40px;
+}
+.first .text h1{
+    font-size:50px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding-left: 40px;
+}
+.first .text pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.first .text form{
+    padding-left: 40px;
+}
+.img{
+    width: 600px;
+    height: 600px;
+    float:right
+}
+.first .text{
+    float: left;
+}
+.navi{
+    display: flex;
+    justify-content:space-between;
+}
+.navi .centre ul a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+}
+.navi .centre ul li{
+    display: inline;
+    padding-right: 35px;
+} 
+.navi .right .b1{
+    color:rgb(255, 102, 0);
+    background-color: rgba(177, 56, 56, 0);
+}
+.navi .right .b2{
+    color:white;
+    border:rgb(255, 153, 0) ;
+    border-radius: 5px;
+    background-color:rgb(255, 153, 0);
+    text-decoration: none;
+}
+.navi .left{
+    padding-left: 40px;
+}
+.navi .left p{
+    color:rgb(255, 153, 0) ;
+    font-family: century gothic;
+    font-size: 15px;
+}
+.navi .right{
+    padding-right: 40px;
+    font-size: 15px;
+}
+.navi .right .b1{
+    color:rgb(255, 153, 0);
+    background-color: rgba(177, 56, 56, 0);
+    border-radius: 7px;
+    border-color:rgb(255, 153, 0);
+    padding: 2px;
+}
+.navi .right .b2{
+    color:white;
+    border-color:rgb(255, 115, 0) ;
+    border-radius: 7px;
+    border-color:rgb(255, 115, 0);
+    padding: 2px;    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;  
+}
+.girl{
+    display: flex;
+    margin-left:60px ;
+    margin-top: 40px;
+    margin-bottom:10px;
+    border-bottom: 8px;
+    margin-right: 60px;
+    background-color: pink;
+    border-radius: 5px;
+}
+.girl .pic{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    width: 550px;
+    height: 550px;
+}
+.write{
+    margin-right: 50px;
+}
+.write h2{
+    font-family:'century gothic' ;
+    font-size:70px ;
+}
+.write p{
+    font-size:x-large ;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.write h3{
+    font-size:x-large ;
+    font-family:lucia bright ;
+}
+.write pre{
+    font-size: x-large;
+    font-family:goudy old style ;
+}
+.write{
+    padding-top: 40px;
+}
+.button .b3 a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    border-color: rgba(240, 248, 255, 0);
+}
+.button .b3{
+    background-color:rgb(255, 115, 0)  ;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 5px;
+    padding: 17px;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+}
+#country img{
+   border-radius: 10px;
+}
+#country{
+    padding:45px;
+}
+#country{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    text-align: left;
+}
+.right{
+    padding-top: 20px;
+}
+.right .b1 a{
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.right .b2 a{
+    color:white ;
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.text form input{
+    color:rgb(255, 115, 0);
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 18px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(104, 126, 139, 0.493);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text form button{
+    color: white;
+    justify-content: center;
+    padding: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    padding-right: 30px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 5px;
+}
+/* .navi{
+    padding: 10px;
+} 
+.navi nav{
+    display: inline;
+}
+.navi nav .right {
+   float: right;
+}
+.navi .right .b1{
+    color:orangered;
+    background-color: rgba(177, 56, 56, 0);
+}
+.navi .right .b2{
+    color:white;
+    border:rgb(255, 153, 0) ;
+    border-radius: 5px;
+    background-color:rgb(255, 153, 0);
+    text-decoration: none;
+}
+ nav .centre ul{
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.navi nav .centre ul a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.navi nav .centre ul li{
+    display: inline;
+    padding-right: 20px;
+} */
+
+.clear {
+    clear: both;
+}
+
+.our {
+    text-align: center;
+}
+.our pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:60px;
+}
+.our1 {
+    text-align: center;
+}
+.our1 pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:60px;
+}
+.last{
+    display: flex;
+    padding:45px;
+}
+.last img{
+    border: 2px ;
+    border-color: rgba(240, 248, 255, 0) 248, 255, 0.938);
+    box-shadow: 2px 2px 5px 7px rgba(255, 115, 0, 0.300) ;
+    border-radius: 10px;
+    margin-right: 35px;
+    margin-left: 35px;
+    width:400px ;
+    height: 400px;
+}
+.button1 .b4 a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    border-color: rgba(240, 248, 255, 0);
+}
+.button1 .b4{
+    background-color:rgb(255, 115, 0)  ;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 5px;
+    padding: 17px;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;  
+}
