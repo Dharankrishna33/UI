@@ -1,2 +1,2 @@
 # UI
-https://dharankrishna33.github.io/UI/
+http://127.0.0.1:5500/UI/
