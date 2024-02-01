@@ -21,7 +21,7 @@
 .img{
     width: 700px;
     height: 800px;
-    float:right
+    float:right;
 }
 .first .text{
     float: left;
@@ -29,12 +29,17 @@
 .navi{
     display: flex;
     justify-content:space-between;
+    
+}
+.centre{
+    justify-content: center;
 }
 .navi .centre ul a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 15px;
+    flex-wrap: nowrap;
 }
 .navi .centre ul li{
     display: inline;
@@ -53,6 +58,7 @@
 }
 .navi .left{
     padding-left: 40px;
+    justify-content: left;
 }
 .navi .left p{
     color:rgb(255, 153, 0) ;
@@ -62,6 +68,7 @@
 .navi .right{
     padding-right: 40px;
     font-size: 15px;
+    justify-content: right;
 }
 .navi .right .b1{
     color:rgb(255, 153, 0);
@@ -137,17 +144,14 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.country {
-   border-radius: 10px;
-}
-.country{
-    padding:20px;
-}
-.country{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17px;
-    text-align: left;
+.country1,.country2,.country3{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 17px;
+   text-align: left;
+   flex-shrink: 1;
 }
 .right{
     padding-top: 20px;
@@ -178,7 +182,7 @@
     background-color: rgba(104, 126, 139, 0.493);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.text form button{
+.text #form button{
     display: inline;
     color: white;
     justify-content: center;
@@ -204,14 +208,16 @@
 }
 
 .our {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .our pre{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:60px;
 }
 .our1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .our1 pre{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -221,6 +227,7 @@
     width: f;
     display: flex;
     padding:45px;
+    justify-content: space-around;
 }
 .last .lastimg{
     border: 2px ;
@@ -248,4 +255,106 @@
     justify-content: center;
     align-items: center;
     font-size: 60px;  
+}
+@media all and (max-width:412px){
+    .left p{
+        font-size: 10px;
+        
+    }
+    .centre a{
+        font-size: xx-small;
+    }
+    #one{
+        font-size: medium;
+        padding-left: 24px ;
+    }
+    .text #pro{
+        font-size:22px;
+        padding-left: 7px;
+        margin-top: px;
+    }
+    .text #pro1{
+        font-size: 12px;
+        padding-left: px;
+    }
+    .text .img{
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+        padding-left:10px;
+        padding-top: 0px;
+        float: none;
+        order: 2;
+    }
+    #flex1{
+        display: flex;
+       
+    }
+    .text form {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+    .text #form button{
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .text #form input{
+        padding: 0px;
+        margin: 0px;
+    }
+    .our pre{
+        font-size: small;
+        text-align: center;
+    }
+    .last .lastimg{
+        width: 30%;
+        height: 80px;
+    }
+    .our1 pre{
+        font-size: small;
+        text-align: center;
+    }  
+    .girl{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }   
+    .girl .pic{
+        padding: 0px;
+        margin: 0px;
+        width: 200px;
+        height: 200px;
+        align-self: center;
+    }  
+    .girl .pic img{
+        width: 200px;
+        
+    }
+    .girl .write h2{
+        position: relative;
+        bottom: 15px;
+        font-size: 30px;
+        text-align: center;
+        margin: 0px;
+    }
+    .girl .write p{ 
+        font-size: medium;
+        padding-left: 19px;
+    }
+    .girl .write pre{
+        font-size: 11px;
+        
+    }
+    .girl .write h3{
+        font-size: medium;
+        text-align: center;
+        margin: 0px;
+    }
+    .girl .write h4{
+        font-size: small;
+        text-align: center;
+        margin:4px 0px 10px 0px ;
+    }
+
 }
