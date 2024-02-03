@@ -1,88 +1,156 @@
-.first .text{
-    padding-bottom: 20px;
+body{
+    margin:0;
 }
-.first .text p{
-    font-size:large ;
+
+.text{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:10% 45% 25% 20% ;
+}
+.text #one{
+    grid-column: span 2;
+    display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    padding-left: 40px;
+    font-size:2vw;
+    justify-content: flex-start;
+    padding-left: 3vw;
 }
-.first .text h1{
-    font-size:50px ;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    padding-left: 40px;
-}
-.first .text pre{
+
+.text .pro1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size:2vw;
 }
 .first .text form{
-    padding-left: 40px;
+    padding-left: 3vw;
+}
+.text #form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.text #form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 115, 0);
+    font-size: 1vw;
+    border-radius: 4px;
+    padding: 2vh 1vw;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(104, 126, 139, 0.493);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text #form button{
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: flex;
+    font-size: 1vw;
+    padding: 0px 1vw;
+    margin-left: 1vw;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 115, 0);
+    border-radius: 5px;
+}
+.text #pro{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:3.3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 .img{
-    width: 700px;
-    height: 800px;
-    float:right;
+    position: relative;
+    top: 5%;
+    grid-row: span 5;
+    width:95%;
+    height: 90%;
 }
 .first .text{
-    float: left;
+    justify-content: left;
 }
 .navi{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
-    
+    align-items: center;
 }
 .centre{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .navi .centre ul a{
+    align-items: center;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 15px;
-    flex-wrap: nowrap;
+    font-size: 1.5vw;
+}
+.navi .centre ul{
+    display: flex;
+    align-items: center;
 }
 .navi .centre ul li{
+    display: flex;
     display: inline;
-    padding-right: 35px;
+    padding-right:2vw;
 } 
-.navi .right .b1{
-    color:rgb(255, 102, 0);
-    background-color: rgba(177, 56, 56, 0);
-}
-.navi .right .b2{
-    color:white;
-    border:rgb(255, 153, 0) ;
-    border-radius: 5px;
-    background-color:rgb(255, 153, 0);
-    text-decoration: none;
-}
 .navi .left{
-    padding-left: 40px;
-    justify-content: left;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .navi .left p{
     color:rgb(255, 153, 0) ;
     font-family: century gothic;
-    font-size: 15px;
+    font-size: 1.2vw;
 }
 .navi .right{
-    padding-right: 40px;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4vw;
+    font-size: 1.2vw;
     justify-content: right;
+    gap: 1vw;
 }
 .navi .right .b1{
     color:rgb(255, 153, 0);
     background-color: rgba(177, 56, 56, 0);
-    border-radius: 7px;
+    border-radius: 0.5vw;
     border-color:rgb(255, 153, 0);
-    padding: 2px;
+    padding: 0.2vw 0.80vw;
+    display: flex;  
+    align-items: center;
 }
 .navi .right .b2{
-    color:white;
     border-color:rgb(255, 115, 0) ;
-    border-radius: 7px;
-    border-color:rgb(255, 115, 0);
-    padding: 2px;    
+    border-radius: 0.5vw;
+    background-color:rgb(255, 115, 0);
+    padding: 0.2vw 0.45vw; 
+    display: flex;  
+    align-items: center;
+}
+.right .b1 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+}
+.navi .right .b2 a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    border-radius: 1vw;
+    text-decoration: none;
+    font-size: 1.3vw;
 }
 .button{
     display: flex;
@@ -91,29 +159,43 @@
     font-size: 60px;  
 }
 .girl{
-    width: 95%;
+    width: 90%;
     display: flex;
-    margin: 30px 25px 10px;
     border-bottom: 8px; 
     background-color: pink;
     border-radius: 5px;
-    padding-right: 10px;
+    justify-content: center;
+    margin: 5%;
 }
 .girl .pic{
+    display: flex;
     padding-left: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
-    width: 500px;
-    height: 500px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.girl .pic img{
+    width: 90%;
+    height: 80%;
 }
 .write{
-    margin-right:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+    align-items: center;
 }
 .write h2{
     font-family:'century gothic' ;
     font-size:70px ;
 }
 .write p{
+    display: flex;
+    width: 100%;
+    padding-left: 9%;
+    text-align: left;
     font-size:x-large ;
     font-family:Georgia, 'Times New Roman', Times, serif ;
 }
@@ -121,8 +203,11 @@
     font-size:x-large ;
     font-family:lucia bright ;
 }
+.write .problem{
+    width: 100%;
+}
 .write pre{
-    font-size: x-large;
+    font-size: 100%;
     font-family:goudy old style ;
 }
 .write{
@@ -153,56 +238,6 @@
    text-align: left;
    flex-shrink: 1;
 }
-.right{
-    padding-top: 20px;
-}
-.right .b1 a{
-    padding: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-}
-.right .b2{
-    border: 4px solid black;
-}
-.right .b2 a{
-    color:white ;
-    font-size: medium;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-}
-.text form input{
-    display: inline;
-    color:rgb(255, 115, 0);
-    font-size: 18px;
-    border-radius: 4px;
-    padding: 18px;
-    border-color: rgba(0, 0, 0, 0);
-    background-color: rgba(104, 126, 139, 0.493);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.text #form button{
-    display: inline;
-    color: white;
-    justify-content: center;
-    padding: 1px;
-    border-color: rgba(0, 0, 0, 0);
-    padding-right: 30px;
-    background-color: rgb(255, 115, 0);
-    border-radius: 5px;
-}
-.text #pro{
-    font-size:50px;
-    font-weight: bold;
-    margin-right: 40px;
-}
-
-.img{
-   padding-left: 800px;
-    width: 500px;
-    height: 500px;
-}
 .clear {
     clear: both;
 }
@@ -213,10 +248,11 @@
 }
 .our pre{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:60px;
+    font-size:50px;
 }
 .our1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .our1 pre{
@@ -268,15 +304,11 @@
         font-size: medium;
         padding-left: 24px ;
     }
-    .text #pro{
-        font-size:22px;
-        padding-left: 7px;
-        margin-top: px;
-    }
-    .text #pro1{
-        font-size: 12px;
-        padding-left: px;
-    }
+    .first .text .pro1{
+       
+
+    } 
+   
     .text .img{
         width: 120px;
         height: 120px;
@@ -284,23 +316,20 @@
         padding-left:10px;
         padding-top: 0px;
         float: none;
-        order: 2;
-    }
-    #flex1{
-        display: flex;
-       
     }
     .text form {
         display: flex;
         justify-content: space-around;
         margin-left: 0px;
+        align-items: center; 
+        gap: 1vw;
     }
     .text #form button{
-        padding-left: 0px;
+        padding: 0px 1vw ;
         margin: 0px;
     }
     .text #form input{
-        padding: 0px;
+        padding:1vw 0px;
         margin: 0px;
     }
     .our pre{
@@ -356,5 +385,4 @@
         text-align: center;
         margin:4px 0px 10px 0px ;
     }
-
 }
