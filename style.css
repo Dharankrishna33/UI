@@ -76,14 +76,24 @@ body{
 }
 .navi{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 .centre{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-self: center;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#button{
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+}
+#shop{
+    position: relative;
+    right: 16vw;
 }
 .navi .centre ul a{
     align-items: center;
@@ -114,15 +124,9 @@ body{
     font-size: 1.2vw;
 }
 .navi .right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 4vw;
-    font-size: 1.2vw;
-    justify-content: right;
-    gap: 1vw;
+    display: none;
 }
-.navi .right .b1{
+.b1{
     color:rgb(255, 153, 0);
     background-color: rgba(177, 56, 56, 0);
     border-radius: 0.5vw;
@@ -131,21 +135,22 @@ body{
     display: flex;  
     align-items: center;
 }
-.navi .right .b2{
+.b2{
     border-color:rgb(255, 115, 0) ;
     border-radius: 0.5vw;
     background-color:rgb(255, 115, 0);
     padding: 0.2vw 0.45vw; 
     display: flex;  
     align-items: center;
+    margin-right: 3vw;
 }
-.right .b1 a{
+.b1 a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: black;
     font-size: 1.3vw;
 }
- .right .b2 a{
+.b2 a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:white;
     border-radius: 1vw;
@@ -302,32 +307,102 @@ body{
     justify-content: center;
     align-items: center;
 }
+#toggle{
+    display:none;
+  
+}
 @media only screen and (max-width:415px){
-    /* .left p{
-        font-size: 10px;
+    /* .b1,.b2{
+        display: none;
+    }
+    .navi .centre #shop{
+        display: none;
+    }
+     */
+    .navi.toggleNavi1{
+        background-color: rgba(0, 0, 0, 0.466);
+    }
+    .centre.toggleNavi2{
+        display: block;
+        color: rgb(255, 115, 0);
+    }
+    #toggle.toggleNavi3{
+        left:43vw;
+        bottom: 82vw;
+    }
+
+    .navi{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        position: relative;
+        right: 38vw;
+    }
+    .centre{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      
+        margin-top: 2vw;
+        display: none;
+    }
+    #button{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        margin-bottom: 5vw;
+    }
+    .b1,.b2{
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
         
     }
-    .centre a{
-        font-size: xx-small;
-    } */
-    /* #one{
-        font-size: medium;
-        padding-left: 24px ;
+    .b1 i,.b2 i{
+        display: none;
     }
-    .text .img{
-        width: 120px;
-        height: 120px;
-        margin-top: 10px;
-        padding-left:10px;
-        padding-top: 0px;
-        float: none;
-    } */
-    .navi .centre ul a{
-        font-size: 2.2vw;
-
+    .b2 a,.b1 a{
+        color: black;
+        font-size: 5vw;
     }
+    #shop ul{
+        align-self: center;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+        gap: 5vw;
+        position: relative;
+        left:17vw;
+        margin-bottom: 5vw;
+    }
+    #shop ul li a{
+        font-size: 4.5vw;
+        
+    }
+    #shop ul li i{
+        display: none;
+    }
+    
+    #toggle{
+        display:block;
+        width: 10%;
+        font-size: xx-large;
+        margin-right: 2vw;
+        position: relative;
+        left: 43vw;
+        bottom: 16vw;
+        cursor: pointer;
+    }
+    #toggle i{
+        color: rgb(255, 115, 0);
+    }
+    
     .navi .left p{
-        font-size: 2vw;
+        font-size: 4vw;
     }
     .navi .right .b1{
         padding: 0.2vw 0.9vw;
@@ -373,17 +448,6 @@ body{
         height: 25%;
         font-size: 2vw;
     }
-    /* .our pre{
-        font-size: small;
-        text-align: center;
-    }
-    .last .lastimg{
-        margin: 3vw 0px;
-    }
-    .our1 pre{
-        font-size: small;
-        text-align: center;
-    }   */
     .girl{
         display: flex;
         flex-direction: column;
