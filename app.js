@@ -25,6 +25,7 @@ let buttons=document.querySelectorAll('.arrow')
 let index=0; 
 let image=document.querySelector('#image')
 let pre=document.querySelector('.changer pre')
+let divi=document.querySelector('.changer div')
 
 
 buttons.forEach(button => {

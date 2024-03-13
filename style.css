@@ -324,6 +324,7 @@ body{
      */
     .navi.toggleNavi1{
         background-color: rgba(0, 0, 0, 0.774);
+        height: 30vh;
     }
     .centre.toggleNavi2{
         display:inline-flex;
@@ -346,6 +347,7 @@ body{
     .navi{
         display: flex;
         flex-direction: column;
+        height: 12vh;
     }
     .left{
         position: relative;
@@ -522,30 +524,83 @@ body{
     }
     .changer{
         width:100%;
-        display: flex;
+        display:flex;
         flex-direction: column;
         align-items: center;
+        
+        height: 360px;
+        justify-content: center;
     }
     #image{
         width: 75%;
     }
     .changer pre{
-        justify-self: left;
+      
     }
     .arrow{
         background-color: rgba(255, 255, 255, 0.658);
-        border-radius: 3vw;
-        padding: 1.2vw;
+        padding: 2.2vw 1.5vw;
         cursor: pointer;
     }
     #ar1{
         position: relative;
-        bottom: 52vw;
-        right: 45vw;
+        bottom: 53vw;
+       
     }
     #ar2{
         position: relative;
-        bottom: 59vw;
-        left: 45vw;
+        bottom: 53vw;
+        left: 83.5vw;
+        padding: 2.3vw 1.5vw;
+    }
+    .navi .left{
+        padding:0;
+    }
+    .text{
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 20% 40% 25% 15%;
+        grid-auto-flow: column;
+        height: 40vh;
+    }
+    .text .img{
+        order: 2;
+        grid-row: span 2;
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+    .text #one{
+        grid-column: span 1;
+    }
+    .pro1{
+        grid-column: span 2;
+    }
+    #form{
+        grid-column: span 2;
+    }
+    .text #one{
+        display: flex;
+        align-items: center;
+        font-size: 3.5vw;
+    }
+    .text #pro{
+        font-size: 5vw;
+    }
+    .text .pro1{
+        font-size: 3vw;
+    }
+    #form #inp{
+        height: 50%;
+        font-size: 3vw;
+    }
+    #form #but{
+        height: 73%;
+        font-size: 3vw;
+    }
+    .our pre{
+        font-weight: bold;
+    }
+    .our1 pre{
+        font-weight: bold;
     }
 }
