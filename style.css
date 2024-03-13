@@ -311,7 +311,10 @@ body{
     display:none;
   
 }
-@media only screen and (max-width:415px){
+.changer{
+    display: none;
+}
+@media only screen and (max-width:420px){
     /* .b1,.b2{
         display: none;
     }
@@ -320,15 +323,24 @@ body{
     }
      */
     .navi.toggleNavi1{
-        background-color: rgba(0, 0, 0, 0.466);
+        background-color: rgba(0, 0, 0, 0.774);
     }
     .centre.toggleNavi2{
-        display: block;
-        color: rgb(255, 115, 0);
+        display:inline-flex;
+        color: rgb(255, 153, 0) ;
+        position: relative;
+        top: 2vw;
     }
+    .centre.toggleNavi2 a{
+        color: rgb(255, 153, 0) ;
+    }
+    .centre.toggleNavi2 li a{
+        color:rgb(255, 153, 0) ;
+    }
+
     #toggle.toggleNavi3{
         left:43vw;
-        bottom: 82vw;
+        bottom: 60vw;
     }
 
     .navi{
@@ -341,14 +353,15 @@ body{
     }
     .centre{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        align-items: center;
-      
-        margin-top: 2vw;
+        
         display: none;
+        margin-top: 2vw;
+        
     }
     #button{
+        align-self: flex-start;
         display: flex;
         flex-direction: column;
         gap: 5vw;
@@ -369,7 +382,7 @@ body{
         font-size: 5vw;
     }
     #shop ul{
-        align-self: center;
+        
         flex-direction: column;
         padding: 0;
         align-items: center;
@@ -394,8 +407,9 @@ body{
         margin-right: 2vw;
         position: relative;
         left: 43vw;
-        bottom: 16vw;
+        bottom: 18vw;
         cursor: pointer;
+        
     }
     #toggle i{
         color: rgb(255, 115, 0);
@@ -502,5 +516,36 @@ body{
     }
     .b3,.b4{
         margin: 2vw 0 4vw 0;
+    }
+    .second{
+        display: none;
+    }
+    .changer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image{
+        width: 75%;
+    }
+    .changer pre{
+        justify-self: left;
+    }
+    .arrow{
+        background-color: rgba(255, 255, 255, 0.658);
+        border-radius: 3vw;
+        padding: 1.2vw;
+        cursor: pointer;
+    }
+    #ar1{
+        position: relative;
+        bottom: 52vw;
+        right: 45vw;
+    }
+    #ar2{
+        position: relative;
+        bottom: 59vw;
+        left: 45vw;
     }
 }
