@@ -324,7 +324,7 @@ body{
      */
     .navi.toggleNavi1{
         background-color: rgba(0, 0, 0, 0.774);
-        height: 30vh;
+        height: 320px;
     }
     .centre.toggleNavi2{
         display:inline-flex;
@@ -338,10 +338,13 @@ body{
     .centre.toggleNavi2 li a{
         color:rgb(255, 153, 0) ;
     }
+    .centre.toggleNavi2 #button{
+        margin-top: 5%;
+    }
 
     #toggle.toggleNavi3{
         left:43vw;
-        bottom: 60vw;
+        bottom: 63vw;
     }
 
     .navi{
@@ -362,12 +365,13 @@ body{
         margin-top: 2vw;
         
     }
-    #button{
+    .centre #button{
         align-self: flex-start;
         display: flex;
         flex-direction: column;
         gap: 5vw;
-        margin-bottom: 5vw;
+        margin-top: 0;
+
     }
     .b1,.b2{
         border: 0;
@@ -448,21 +452,21 @@ body{
         gap: 1vw;
     }
     .text #form button{
-        padding: 0vw 1.1vw ;
+        padding:0 ;
         margin: 0px;
         width: 25%;
-        height: 55%;
-        font-size: 2vw;
+        height: 100%;
+        font-size: 3.3vw;
         display: flex;
         align-items: center;
+        border: 3px solid rgb(255, 115, 0);
     }
     
     .text #form input{
-        padding:1vw 0px;
-        margin: 0px;
-        width: 40%;
-        height: 25%;
-        font-size: 2vw;
+        width: 60%;
+        height: 80%;
+        font-size: 3vw;
+        padding: 2.5px;
     }
     .girl{
         display: flex;
@@ -478,7 +482,7 @@ body{
     }  
     .girl .pic img{
         width: 90%;
-        height: 90%;
+        height: 110%;
     }
     .girl .write h2{
         position: relative;
@@ -519,6 +523,9 @@ body{
     .b3,.b4{
         margin: 2vw 0 4vw 0;
     }
+    .button .b3{
+        border-radius: 1.5vw;
+    }
     .second{
         display: none;
     }
@@ -531,11 +538,13 @@ body{
         height: 360px;
         justify-content: center;
     }
+
     #image{
         width: 75%;
     }
-    .changer pre{
-      
+    .changer.position{
+      position: relative;
+      bottom: 1.4vw;
     }
     .arrow{
         background-color: rgba(255, 255, 255, 0.658);
@@ -546,6 +555,12 @@ body{
         position: relative;
         bottom: 53vw;
        
+    }
+    .changer.position #ar1{
+        bottom: 50vw;
+    }
+    .changer.position #ar2{
+        bottom: 50vw;
     }
     #ar2{
         position: relative;
@@ -558,9 +573,10 @@ body{
     }
     .text{
         grid-template-columns: 50% 1fr;
-        grid-template-rows: 20% 40% 25% 15%;
+        grid-template-rows: 20% 45% 23% 12%;
         grid-auto-flow: column;
         height: 40vh;
+        margin-top: 4vw;
     }
     .text .img{
         order: 2;
@@ -589,18 +605,16 @@ body{
     .text .pro1{
         font-size: 3vw;
     }
-    #form #inp{
-        height: 50%;
-        font-size: 3vw;
-    }
-    #form #but{
-        height: 73%;
-        font-size: 3vw;
+    .our{
+        margin-top: 3.5vw;
     }
     .our pre{
         font-weight: bold;
     }
     .our1 pre{
         font-weight: bold;
+    }
+    .our1{
+        margin-bottom: 2vw;
     }
 }

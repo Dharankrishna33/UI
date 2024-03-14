@@ -26,7 +26,7 @@ let index=0;
 let image=document.querySelector('#image')
 let pre=document.querySelector('.changer pre')
 let divi=document.querySelector('.changer div')
-
+let change=document.querySelector('.changer')
 
 buttons.forEach(button => {
     button.addEventListener('click',()=>{
@@ -44,6 +44,7 @@ buttons.forEach(button => {
             index--
         }
     }
+    change.classList.add('position')
     image.src=`${imglist[index]}.jpg`
     pre.innerHTML=`      <b>${imglist[index]}:</b>${address[index]}                    
       <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
