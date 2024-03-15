@@ -44,7 +44,7 @@ buttons.forEach(button => {
             index--
         }
     }
-    change.classList.add('position')
+    change.classList.add('position') 
     image.src=`${imglist[index]}.jpg`
     pre.innerHTML=`      <b>${imglist[index]}:</b>${address[index]}                    
       <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
