@@ -170,7 +170,7 @@ body{
     background-color: pink;
     border-radius:1.5vw;
     margin: 5%;
-    padding: 2vw;
+    padding: 2vw 0 2vw 0;
 }
 .girl .pic{
     grid-row: span 4;
@@ -323,14 +323,18 @@ body{
     }
      */
     .navi.toggleNavi1{
-        background-color: rgba(0, 0, 0, 0.774);
+        background-color: rgb(0, 0, 0);
         height: 320px;
+        
     }
     .centre.toggleNavi2{
         display:inline-flex;
         color: rgb(255, 153, 0) ;
         position: relative;
         top: 2vw;
+        border-top: 2px solid white;
+        border-bottom: 2px dashed white;
+        margin-top: 0;
     }
     .centre.toggleNavi2 a{
         color: rgb(255, 153, 0) ;
@@ -344,7 +348,7 @@ body{
 
     #toggle.toggleNavi3{
         right: 0;
-        top: 3vh;
+        top: 4vh;
     }
 
     .navi{
@@ -352,6 +356,7 @@ body{
         flex-direction: column;
         height: 12vh;
         position: relative;
+        padding-top: 10px;
     }
     .left{
         position: relative;
@@ -414,7 +419,7 @@ body{
         margin-right: 2vw;
         position: absolute;
         right: 0;
-        top: 3vh;
+        top: 4vh;
         cursor: pointer;
         
     }
