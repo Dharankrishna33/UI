@@ -170,7 +170,7 @@ body{
     background-color: pink;
     border-radius:1.5vw;
     margin: 5%;
-    padding: 2vw 0 2vw 0;
+    padding: 2vw 0px 2vw 0px;
 }
 .girl .pic{
     grid-row: span 4;
